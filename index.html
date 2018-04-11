@@ -5,25 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1 {
+            color: black;
+            font-family: sans-serif;
+            background-color: teal;
+            text-align: center;
+            
+        }
+
+        h3 {
+            font-size: 50px;
+        }
+
+        li {
+            border: 1px solid black;
+            margin-bottom: 5px;
+        }
+        
+        .content {
+            color: green;
+        }
+
+        article .content {
+            border: 1px dashed purple;
+        }
+        
+        #image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to my <strong>PAGE</strong></h1>
+        <h1>Welcome to my <strong>FIRST PAGE</strong> (This is located in the <em>header</em> element)</h1>
+        <a href="about.html">About (same site different page)</a> <br>
+        <a href="https://io9.gizmodo.com/hot-toys-rocket-raccoon-comes-with-a-blaster-thats-almo-1792709792">External Link</a> <br>
+        <a href="#Rockets-qualities">Internal Link (same page)</a> <br>
     </header>
 
     <main>
-        <p class="content">This is a paragraph. A very short paragraph. </p>
-        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--aDaRqzic--/c_scale,fl_progressive,q_80,w_800/taektehqtuloivcmqusz.jpg">
+       <article>
+            <p class="content">This is a paragraph. A very short paragraph. Also, this is the start of the <em>main</em> element</p>
+            <p class="content">This is another paragraph</p>
+            <p class="content">And another paragraph</p>
+            <p class="content">And another</p>
+            <p class="content">And one more</p>
+        </article>
+
+        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--aDaRqzic--/c_scale,fl_progressive,q_80,w_800/taektehqtuloivcmqusz.jpg" id="image">
+       
         <h3>Rocket Raccoon</h3>
         
-        <ul id="Rockets qualitites">
+        <ul id="Rockets-qualities">
             <li>Agile</li>
             <li>Crude humor</li>
             <li>Fast thinker</li>
             <li>Good w/weapons</li>
             <li>Loyal</li>
         </ul>
+       
         <p class="content">Rocket may be small but packs a large <strong>PUNCH</strong>.</p>
+        <p class="content">I'm breaking this paragraph <br>
+        on different <br>
+        lines using the br tag <br>
+        </p>
     </main>
 
     <footer>
